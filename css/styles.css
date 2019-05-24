@@ -32,7 +32,16 @@ body {
     margin: 5% 3% 5% 0%;
 }
 
+.image-class {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+}
+
 #features {
+    z-index: 1;
+    position: relative;
+    background-color: #fff;
     text-align: center;
     padding: 7% 15%;
 }
@@ -90,4 +99,37 @@ h2 {
 
 .pricing-coloumn {
     padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+    .image-class {
+        position: static;
+        transform: rotate(0);
+    }
+    #title {
+        text-align: center;
+    }
+}
+
+#cta {
+    text-align: center;
+    background-color: #ff4c68;
+    font-family: "Montserrat-Black", sans-serif;
+    color: white;
+    padding: 7% 15%;
+}
+
+#footer {
+    padding: 6% 7%;
+    text-align: center;
+}
+
+.foot {
+    margin: 10px;
+}
+
+.cta-h3 {
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 3.5rem;
+    line-height: 1;
 }
